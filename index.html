@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Source Namer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="usage-view">
+        <header class="usage-header">
+            <h1>Log Source Namer</h1>
+            <p class="app-description">A flexible tool to generate standardized names. Click the settings icon ⚙️ to
+                configure.</p>
+            <button id="open-settings-btn" title="Open Settings">⚙️</button>
+        </header>
+        <section id="form-section" class="card"></section>
+        <section id="result-section" class="card">
+            <h2>Result</h2>
+            <div class="output-container">
+                <input type="text" id="output-string" readonly placeholder="Result will appear here...">
+                <button id="copy-btn">Copy</button>
+            </div>
+        </section>
+        <footer class="usage-footer">
+            <p>Ready to generate names. <a href="#" id="open-settings-link">Configure your fields and template.</a></p>
+        </footer>
+    </main>
+    <div id="settings-overlay"></div>
+    <aside id="settings-view">
+        <header class="settings-header">
+            <h2>Settings</h2>
+            <button id="close-settings-btn" title="Close Settings">&times;</button>
+        </header>
+        <div class="settings-content">
+            <section class="settings-card">
+                <h3>Fields & Processors</h3>
+                <p class="settings-help">Define your fields and the transformations for each one.</p>
+                <div id="fields-config-container"></div>
+                <button id="add-field-btn">+ Add New Field</button>
+            </section>
+            <section class="settings-card">
+                <h3>Smart Template Builder</h3>
+                <p class="settings-help">Build your naming template below. Click on available field pills to insert
+                    them.</p>
+                <div id="template-pills-container"></div>
+                <input type="text" id="template-input" placeholder="e.g., CUST-{Customer}_FW-{IP}">
+            </section>
+            <section class="settings-card">
+                <h3>Preferences</h3>
+                <div class="preference-item">
+                    <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                        <input type="checkbox" id="auto-copy-checkbox" style="width: auto; height: auto;">
+                        Auto-copy result to clipboard
+                    </label>
+                </div>
+            </section>
+        </div>
+        <footer class="settings-footer">
+            <button id="save-config-btn" class="primary-btn">Save & Close</button>
+        </footer>
+    </aside>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
