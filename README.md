@@ -41,6 +41,8 @@ This is not just a simple text joiner; it's an advanced naming engine:
 
 ## Contributing ❤️
 
+If you found this tool useful, first please give a star to the repository! ⭐
+
 This project can grow even more as a community project. Your contributions, bug reports, and feature suggestions are highly valued.
 
 If you'd like to contribute, please follow these steps:

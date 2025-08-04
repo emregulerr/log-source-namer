@@ -299,3 +299,33 @@ button {
     /* A standard success green */
     color: white;
 }
+
+.header-icons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* İkonlar arası boşluk */
+}
+
+#github-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    /* Normal metin rengini alır */
+    padding: 0.5rem;
+}
+
+#github-link:hover {
+    color: var(--primary-color);
+    /* Üzerine gelince ana renge döner */
+}
+
+#open-settings-btn {
+    /* Mevcut butonu header-icons div'ine taşıdığımız için
+       artık position: absolute olmasına gerek yok. */
+    position: static;
+}
